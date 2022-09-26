@@ -1,21 +1,21 @@
-const ProductsList = () => {
+// import products from '../../data/products.json'
+import ProductsListItem from '../ProductsListItem/ProductsListItem';
+
+const ProductsList = props => {
+  const { products } = props;
   return (
     <section>
       <ul className="products">
-        <li className="product">
-          <img className="image" src="https://" alt="" />
-          <div className="discr">
-            <h3 className="model">iPhone</h3>
-
-            <>
-              <span className="price">4000</span>
-              <span className="currency">UAH</span>
-            </>
-          </div>
-          <button className="btn-bue" type="button">
-            Купити
-          </button>
-        </li>
+        {products.map((el) => (
+          <ProductsListItem
+            key={el.id}
+            // url={el.url}
+            // model={el.model}
+            // price={el.price}
+            // currency={el.currency}
+            {...el}
+          />
+        ))}
       </ul>
     </section>
   );
