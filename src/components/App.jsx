@@ -5,10 +5,10 @@ import Cart from "./Cart/Cart";
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Main />
-      {/* <Cart /> */}
-    </div>
+      <Cart />
+    </>
   );
 };

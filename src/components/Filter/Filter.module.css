@@ -1,0 +1,75 @@
+.filter {
+    width: 200px;
+    padding: 10px;
+    height: 300px;
+    background-color: green;
+  }  
+  
+  .filterTitle {
+      margin: 0;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  
+  .filterList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    padding-left: 10px;
+  }
+  
+  .filterItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+/*   
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  } */
+  
+  .filterInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  
+  .filterLabel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterLabelContent {
+    font-size: 18px;
+  }
+  
+  .filterLabel::before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    align-self: center;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    /* background-color: olive; */
+  }
+  
+  .filterInput:checked + .filterLabel::before {
+    border: 2px solid #0f7be0;
+    background-color: #0f7be0;
+  }

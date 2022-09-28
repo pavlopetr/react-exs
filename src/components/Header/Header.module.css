@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: deepskyblue;
+  }
+  
+  .headerLogo {
+    display: block;
+    height: 70px;
+  }
+  
+  .headerUserInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerUserAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #212121;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: aliceblue;
+  }
+  
+  .headerUserEmail {
+    font-size: 24px;
+  }
+  .btnCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: white;
+  transform: scale(1);}
+  .btnCart:active {
+    transform: scale(0.8);
+    transition: transform 1s linear;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: midnightblue;
+  }
+  
+  .cartDescr{
+    font-size: 16px;
+    color: aliceblue;
+  }
+  .headerUserInfo{
+    display: flex;
+  align-items: center;
+  margin-left: auto;
+  }
+  .cartInfo{
+    margin-right: 30px;
+    
+  }

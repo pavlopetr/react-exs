@@ -1,11 +1,12 @@
-// import products from '../../data/products.json'
-import ProductsListItem from '../ProductsListItem/ProductsListItem';
 
+
+import styles from "./ProductsList.module.css"
+import ProductsListItem from '../ProductsListItem/ProductsListItem';
 const ProductsList = props => {
   const { products } = props;
   return (
     <section>
-      <ul className="products">
+      <ul className={styles.products}>
         {products.map((el) => (
           <ProductsListItem
             key={el.id}

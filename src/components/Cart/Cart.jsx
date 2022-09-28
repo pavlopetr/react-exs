@@ -1,3 +1,6 @@
+import './Cart.css'
+
+
 const Cart = () => {
     return(<div>
         <ul class="cart-products">
